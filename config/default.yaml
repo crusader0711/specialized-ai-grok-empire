@@ -1,0 +1,7 @@
+owner_tz: "<OWNER_TZ>"
+quiet_hours: {start: "<QUIET_START>", end: "<QUIET_END>"}
+data_freshness:   # hours before data counts as missing
+  weather: 6
+  finance: 24
+  markets: 1
+  school: 24

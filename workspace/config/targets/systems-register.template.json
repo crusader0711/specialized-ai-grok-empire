@@ -1,0 +1,6 @@
+{
+  "_note": "CONFIDENTIAL TEMPLATE. Copy to systems-register.json locally; the real file is gitignored and never committed.",
+  "sites": [{"id": "<SITE_ID>", "label": "<SITE_LABEL>", "region": "<HOME_REGION>"}],
+  "devices": [{"id": "<DEVICE_ID>", "type": "<TYPE>", "site": "<SITE_ID>"}],
+  "network": {"_note": "Describe your network only in the local copy."}
+}

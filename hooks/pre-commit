@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# pre-commit: lint + secret scan (gitleaks if installed).
+set -euo pipefail
+./scripts/lint.sh
+if command -v gitleaks >/dev/null; then gitleaks protect --staged --no-banner; fi

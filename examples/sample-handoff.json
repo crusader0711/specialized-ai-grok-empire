@@ -1,0 +1,12 @@
+{
+  "task_id": "T-YYYY-MMDD-NNN",
+  "mission_id": "M-0001",
+  "from": "weather", "to": "chief-of-staff",
+  "objective": "Morning weather brief for the digest",
+  "artifact": "<STATE_DIR>/weather/briefs/YYYY-MM-DD.md",
+  "evidence": ["<source URL + date>"],
+  "status": "COMPLETE",
+  "blockers": [],
+  "next_action": "Lift summary into the Morning Brief",
+  "handed_off_at": "<ISO-8601>"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project SAGE config",
+  "type": "object",
+  "required": ["owner_tz", "quiet_hours", "data_freshness"],
+  "properties": {
+    "owner_tz": {"type": "string"},
+    "quiet_hours": {"type": "object", "required": ["start", "end"], "properties": {"start": {"type": "string"}, "end": {"type": "string"}}},
+    "data_freshness": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}}
+  }
+}

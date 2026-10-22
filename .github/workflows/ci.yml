@@ -1,0 +1,13 @@
+name: ci
+on: [pull_request, push]
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup
+        run: sudo apt-get update -qq && sudo apt-get install -y shellcheck jq
+      - name: Lint
+        run: make lint
+      - name: Test
+        run: make test

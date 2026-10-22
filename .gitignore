@@ -1,0 +1,10 @@
+dist/
+.cache/
+workspace/state/
+workspace/config/targets/systems-register.json
+*.local.*
+.env
+*.pem
+secrets/
+.idea/
+.vscode/

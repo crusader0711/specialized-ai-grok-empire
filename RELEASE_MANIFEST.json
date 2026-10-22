@@ -1,0 +1,17 @@
+{
+  "name": "specialized-ai-grok-empire",
+  "version": "0.1.0",
+  "released": "2026-10-22T09:41:32Z",
+  "git_commit": "8a4a6a1",
+  "artifacts": [
+    {
+      "path": "dist/specialized-ai-grok-empire-0.1.0.tar.gz",
+      "sha256": "74ff76658d9b10690c183916ebee5bb0eaba5edc5d15f7dfba7bda8505c5e334",
+      "size_bytes": 419381
+    }
+  ],
+  "provenance": {
+    "built_by": "local",
+    "builder_id": "local"
+  }
+}
