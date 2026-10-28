@@ -30,7 +30,7 @@ cd specialized-ai-grok-empire
 make setup    # install git hooks
 make lint test
 ```
-Then follow [docs/HOW-TO.md](docs/HOW-TO.md).
+Then complete [docs/onboarding/personal-security-vetting.md](docs/onboarding/personal-security-vetting.md) (onboarding step: phone spam and data-broker removal), and follow [docs/HOW-TO.md](docs/HOW-TO.md).
 
 ## Architecture
 See [docs/architecture.md](docs/architecture.md) for the system boundary and data flow.
@@ -50,6 +50,7 @@ See [docs/architecture.md](docs/architecture.md) for the system boundary and dat
 Themes are optional: see [docs/THEMING.md](docs/THEMING.md).
 
 ## Usage
+- [docs/onboarding/personal-security-vetting.md](docs/onboarding/personal-security-vetting.md): required onboarding step; checklist in [templates/personal-security-checklist-template.md](templates/personal-security-checklist-template.md).
 - [docs/HOW-TO.md](docs/HOW-TO.md): set up your team in Grok Bot, step by step.
 - [docs/BOOTSTRAP-CHIEF-OF-STAFF.md](docs/BOOTSTRAP-CHIEF-OF-STAFF.md): hand this to your Chief of Staff so it builds every bot for you, one approval at a time.
 - [docs/doctrine/](docs/doctrine/): priority scoring, tiers, autonomy, quiet hours, freshness, routing, cadence.

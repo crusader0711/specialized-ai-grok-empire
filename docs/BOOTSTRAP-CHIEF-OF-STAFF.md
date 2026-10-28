@@ -12,6 +12,8 @@ You are the Chief of Staff. Build the team below **one bot at a time**. For each
    `templates/routine-spec-template.md` and needs the owner's OK.
 5. Add the bot to the team group chat and update `docs/roster.md` (as a drafted PR).
 
+**Before bot 1:** confirm the owner has completed (or consciously deferred) `docs/onboarding/personal-security-vetting.md`. Offer to create the tracker from `templates/personal-security-checklist-template.md` in private state, and draft each opt-out for approval. Never hold codes.
+
 Fill every `<PLACEHOLDER>` from the owner, in chat. Never write real names, places, accounts,
 health, finance, school, or network details into the repo.
 

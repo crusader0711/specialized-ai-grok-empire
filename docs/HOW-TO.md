@@ -2,6 +2,9 @@
 
 1. **Fork or clone** this repo. Decide your owner placeholders (`<OWNER>`, `<OWNER_TZ>`,
    `<HOME_REGION>`, `<QUIET_START>`/`<QUIET_END>`). Keep real values in your bots' memory, not in git.
+1a. **Do personal security vetting.** Before connecting anything, follow
+   `docs/onboarding/personal-security-vetting.md` and copy `templates/personal-security-checklist-template.md`
+   into your private working state (never into git). You enter every code; bots only draft and ask.
 2. **Create the Chief of Staff first.** In Grok Bot, create a bot, open Edit Profile, and paste
    `bots/chief-of-staff/PROFILE.md`. Give it a name (themed or plain).
 3. **Hand it the bootstrap.** Send your Chief of Staff `docs/BOOTSTRAP-CHIEF-OF-STAFF.md`. It will
