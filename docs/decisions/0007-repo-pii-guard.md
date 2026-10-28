@@ -1,0 +1,5 @@
+# ADR-0007: Repo PII Guard (structure template v1.1, section 11)
+**Status:** Accepted
+**Context:** This repo is a public template. Personal data about an owner, their family or anyone else must never be committed, and teams built from the template inherit the guarantee.
+**Decision:** Mandatory, retroactive PII guard: `scripts/pii-scan.sh` (generic patterns for emails, US phones, street addresses, city/state/ZIP, SSN, Luhn-valid cards, account numbers, one-time codes; masked output; tree, `--staged` and `--diff` modes), `config/pii-allowlist.txt` for reviewed false positives, `hooks/pre-commit` and `hooks/pre-push`, a call from `scripts/lint.sh`, `make pii-scan`, a named CI step and `tests/unit/test_pii_scan.sh`. Owner-specific values live in a deny-list **outside** the repo, supplied through env `PII_DENYLIST`; the repo carries generic patterns only.
+**Consequences:** PII-shaped text fails lint, pre-commit and CI. Real PII found in existing content is reported to the owner and never silently rewritten out of history. See `docs/doctrine/REPO-PII-GUARD.md`.
