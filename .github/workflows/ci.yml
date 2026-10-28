@@ -7,6 +7,17 @@ jobs:
       - uses: actions/checkout@v5
       - name: Setup
         run: sudo apt-get update -qq && sudo apt-get install -y shellcheck jq
+      - name: PII scan
+        env:
+          PII_DENYLIST_CONTENT: ${{ secrets.PII_DENYLIST }}
+        run: |
+          # Generic patterns always; owner deny-list only if the optional repo secret exists (never stored in the repo).
+          if [ -n "$PII_DENYLIST_CONTENT" ]; then
+            umask 077
+            printf '%s\n' "$PII_DENYLIST_CONTENT" > "$RUNNER_TEMP/pii-denylist.txt"
+            export PII_DENYLIST="$RUNNER_TEMP/pii-denylist.txt"
+          fi
+          make pii-scan
       - name: Lint
         run: make lint
       - name: Test

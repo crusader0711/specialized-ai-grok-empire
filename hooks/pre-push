@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
+./scripts/pii-scan.sh
 ./scripts/test.sh
