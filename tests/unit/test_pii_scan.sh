@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Unit: scripts/pii-scan.sh detects each generic PII class, honors the allow-list, deny-list and modes.
 # Fixtures are assembled at runtime from fragments so this file itself holds no PII-shaped literals.
-# shellcheck disable=SC2329,SC2034  # helpers are invoked through eval; $out is read inside eval strings
+# shellcheck disable=SC2329,SC2317,SC2034  # helpers are invoked through eval; $out is read inside eval strings
 set -uo pipefail
 cd "$(dirname "$0")/../.." || exit 1
 ROOT=$PWD
