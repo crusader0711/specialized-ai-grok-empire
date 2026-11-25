@@ -12,6 +12,7 @@ This is the single source of truth for AI agents. `CLAUDE.md` and `GEMINI.md` on
 - Conventional Commits; branches `feat/<slug>` / `fix/<slug>`; squash-merge into protected `main`.
 - Agents open PRs only. Never merge, never force-push `main`.
 - Accepted ADRs in `docs/decisions/` are immutable; supersede with a new ADR.
+- Backlog SoT is `docs/BACKLOG.md` (IDs `BL.NN`, never reused); idea text must pass the PII scan.
 - Charter packs live in `bots/<id>/PROFILE.md` with an index in `charters/`; missions in `missions/`.
 
 ## Guardrails
