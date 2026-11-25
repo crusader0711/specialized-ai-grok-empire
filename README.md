@@ -62,6 +62,7 @@ Themes are optional: see [docs/THEMING.md](docs/THEMING.md).
 Run `make help` for every verb (`setup`, `lint`, `test`, `build`, `release`, `clean`).
 AI agents start at [AGENTS.md](AGENTS.md). Layout and file index: [WIKI.md](WIKI.md).
 Contribution rules: [CONTRIBUTING.md](CONTRIBUTING.md). Security: [SECURITY.md](SECURITY.md). Privacy: [PRIVACY.md](PRIVACY.md).
+Ideas for consideration: [docs/BACKLOG.md](docs/BACKLOG.md) (intake template: [.github/ISSUE_TEMPLATE/idea.yml](.github/ISSUE_TEMPLATE/idea.yml)).
 
 ## License
 MIT (see [LICENSE](LICENSE)). Third-party credits: [ATTRIBUTION.md](ATTRIBUTION.md).
